@@ -1,6 +1,6 @@
 {
   "name": "thumbsville",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Thumbsville for Hapi",
   "main": "lib/index.js",
   "scripts": {

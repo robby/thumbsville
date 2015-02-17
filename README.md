@@ -1,4 +1,5 @@
-# Thumbsville — Organize your Hapi app with route packs that allow you to separate sections of the app.
+# Thumbsville
+Organize your Hapi app with route packs that allow you to separate sections of the app called ```hoods```.
 
 [![NPM](https://nodei.co/npm/thumbsville.png)](https://nodei.co/npm/thumbsville/)
 
@@ -33,3 +34,14 @@ Thumbsville.viewOptions = function(plugin){
 
 Thumbsville.findRoutePacks(server /* Hapi server */, './hoods');
 ```
+
+
+## Shared paths
+
+Shared paths allow you to have local content for each hood but still keep shared views, layouts, helpers and partials in one place.
+
+```javascript
+Thumbsville.sharedPaths = __dirname + '/common';
+```
+
+Add this before calling ```Thumbsville.findRoutePacks``` to use shared and local paths for all view related content. In this example, the ```path``` property of ```viewOptions``` would have ```/common/views``` appended to the view search list for all views in that hood.

@@ -1,6 +1,6 @@
 {
   "name": "thumbsville",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Thumbsville for Hapi",
   "main": "lib/index.js",
   "scripts": {
@@ -15,7 +15,9 @@
     "thumbsville"
   ],
   "peerDependencies": {
-    "hapi": ">= 8.x.x"
+    "hapi": ">= 11.x.x",
+    "inert": ">= 3.2.0",
+    "vision": ">= 4.0.1"
   },
   "author": "Robby Valles <robby.valles@gmail.com>",
   "license": "MIT",
